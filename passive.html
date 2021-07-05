@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title>Passive</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jQuizler.css" />
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>1. The results of the research ---- that, presently, several East Asian countries ---- rapidly</h3>",
+        answers: [
+            "have indicated / were developing ",
+            "indicate / are developing ",
+            "are indicated / have been developing ",
+            "were indicated / had developed",
+            "had indicated / developed"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>2. Understandably, her friends ---- when Julia married someone else after being engaged to John for two years.</h3>",
+        answers: [
+            "are surprising ",
+            "were surprised ",
+            "surprised",
+            "will be surprised ",
+            "had surprised"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>3. The facsimile ---- when the secretary returns from lunch.</h3>",
+        answers: [
+            "will be sent ",
+            "is going to send ",
+            "should have sent",
+            "was being sent ",
+            "has been sent "
+        ],
+        correct: [1]
+    },
+{
+        type: "choose",
+        question: "<h3>4. Because James ---- to physical work, he ---- after he had spent a week on the farm.</h3>",
+        answers: [
+            "isn’t accustomed / might be exhausted ",
+            "hadn’t accustomed / had exhausted ",
+            "won’t be accustomed / will be exhausted",
+            "hasn’t accustomed / has exhausted ",
+            "wasn’t accustomed / was exhausted"
+        ],
+        correct: [5]
+    },
+{
+        type: "choose",
+        question: "<h3>5. Animals ---- to survive in the wild, rather than kept in captivity</h3>",
+        answers: [
+            "are helping ",
+            "have been helping  ",
+            "should be helped",
+            "could be helping ",
+            "ought to have helped"
+        ],
+        correct: [3]
+    },
+{
+        type: "choose",
+        question: "<h3>6. Films of violence ---- on television until after 9.30 at night, the time when the majority of children ---- to bed.</h3>",
+        answers: [
+            "cannot be shown / went ",
+            "aren’t being shown / had gone",
+            "didn’t use to be shown / are going ",
+            "shouldn’t be shown / go",
+            "needn’t be shown / have gone"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>7. Normal climbing boots slip in icy conditions, so climbers ---- iron plates with spikes, known as crampons, to their boots.</h3>",
+        answers: [
+            "should be fixed ",
+            "have to fix ",
+            "have been fixed",
+            "used to fix   ",
+            "must be fixed"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>8. “Fragile, handle with care” ---- on the package, but still the contents of the parcel ---- when it arrived.</h3>",
+        answers: [
+            "had written / would be broken  ",
+            "is being written / will be broken",
+            "was written / were broken   ",
+            "would have written / had broken  ",
+            "has been written / could break"
+        ],
+        correct: [3]
+    },
+{
+        type: "choose",
+        question: "<h3>9. An apple tree ---- fruit until it is five to eight years old.</h3>",
+        answers: [
+            "did not bear ",
+            "was not bearing ",
+            "has not been borne",
+            "does not bear",
+            "will not be borne"
+        ],
+        correct: [4]
+    },
+{
+        type: "choose",
+        question: "<h3>10. The hill where Jane Austen set one of her romances ---- Box Hill because of the box trees which ---- there.</h3>",
+        answers: [
+            "calls / are grown ",
+            "has been calling / grew",
+            "used to call / used to grow   ",
+            "are calling / were growing",
+            "is called / grow"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>11. Your chances of success in an examination ---- if you ---- the course work thoroughly</h3>",
+        answers: [
+            "enhance / are revised ",
+            "were enhancing / revised",
+            "had enhanced / were revising ",
+            "could be enhanced / would revise",
+            "are enhanced / revise"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>12. When he ---- an essay on time for once, his professor ---- him a look of surprise</h3>",
+        answers: [
+            "handed / gave ",
+            "was handed / was giving",
+            "is handed / will be given ",
+            "has handed / would give",
+            "hands / is given"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>13. You ---- plenty of time in case the bus ----; otherwise, you’ll risk missing your ferry</h3>",
+        answers: [
+            "must have allowed / delays ",
+            "used to allow / delayed",
+            "ought to be allowed / has delayed",
+            "had better allow / is delayed ",
+            "were allowed / was delayed"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>14. It’s true that happiness ---- with money, but some money ---- life easier</h3>",
+        answers: [
+            "mustn’t be bought / made ",
+            "shouldn’t bought / has made",
+            "can’t be bought / makes  ",
+            "doesn’t buy / is making",
+            "hasn’t been bought / is made"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>15. Cells ---- for the first time by the English scientist Robert Hooke, who, in 1665, ---- a book about his findings.</h3>",
+        answers: [
+            "were described / published  ",
+            "had described / would have published  ",
+            "could be described / was published",
+            "has described / had published ",
+            "would be described / could be published"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>16. Portland cement, when it ---- with water, ---- a paste that binds sand, gravel and stone into a rock-like mass called concrete.</h3>",
+        answers: [
+            "will be combined / formed ",
+            "has combined / is formed",
+            "was combined / was formed ",
+            "combines / has been formed",
+            "is combined / forms"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>17. The twentieth century, now nearing its end, ---- the century when mankind ---- to realise that the Earth’s resources are limited.</h3>",
+        answers: [
+            "was / was coming ",
+            "will be / had come",
+            "has been / has come ",
+            "had been / came",
+            "will have been / is coming"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>18. Up to now, the equipment ---- regularly, but from now on, we ---- it before every outing.</h3>",
+        answers: [
+            "wasn’t checked / are checking ",
+            "hasn’t checked / will be checking ",
+            "isn’t being checked / should be checked",
+            "hasn’t been checked / are going to check",
+            "hadn’t checked / have to be checked"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>19. Judging from the speed of mechanisation, it ---- that very few things in the world ---- by hand in the twenty-first century</h3>",
+        answers: [
+            "has been predicted / will be making ",
+            "can be predicted / will be made",
+            "will be predicted / were made  ",
+            "is being predicted / have been made ",
+            "is predicting / will have been made"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>20. Considering the major resources we ---- with for the project, we ---- a wonderful job.</h3>",
+        answers: [
+            "had been provided / did ",
+            "were provided / can do",
+            "have been provided / used to do ",
+            "will be provided / have done ",
+            "provided / will be doing"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>21. Solutions to the problem of unemployment ---- , but none of the measures that ---- so far has been very successful</h3>",
+        answers: [
+            "have sought / will be tired ",
+            "will be sought / have been trying",
+            "had been seeking / were trying  ",
+            "are being sought / have been tried",
+            "have been seeking / are tried"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>22. Africa’s population growth rate is much higher than the world average and it ---- that, by the year 2050, Africa ---- for twenty-one percent of the world’s population</h3>",
+        answers: [
+            "has estimated / account ",
+            "was estimating / had been accounting ",
+            "will be estimated / accounted ",
+            "will have estimated / is accounting",
+            "is estimated / will account"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>23. Following stricter “drink driving” regulations, the number of accidents which ---- drunk drivers ---- significantly.</h3>",
+        answers: [
+            "have been involved / is reduced ",
+            "involve / has been reduced",
+            "were involved / was reducing ",
+            "are involved / is reducing ",
+            "involved / has been reducing"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>24. I managed to translate most of the letter for you, but I ---- stuck on one or two sentences.</h3>",
+        answers: [
+            "am getting ",
+            "get  ",
+            "got  ",
+            "was getting ",
+            "will get"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>25. The world’s first dental school, Baltimore Collage of Dental Surgery, ---- by two Americans, Horace Hayden and Chapin Harris, in 1839.</h3>",
+        answers: [
+            "would have founded ",
+            "was founding ",
+            "was founded",
+            "had founded ",
+            "would be founding"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>26. The works of Shakespeare ---- into every major language in the world</h3>",
+        answers: [
+            "are going to translate ",
+            "have been translated",
+            "had translated ",
+            "had been translating ",
+            "will have translated"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>27. He ---- about this meeting for weeks, so I don’t know why he ---- anything for it yet.</h3>",
+        answers: [
+            "is known / isn’t preparing ",
+            "was known / doesn’t prepare",
+            "knows / didn’t prepare ",
+            "has known / hasn’t prepared",
+            "knew / hadn’t prepared"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>28. There were such a lot of different things to do at the resort where we ---- our holiday that none of us ----.</h3>",
+        answers: [
+            "spent / was bored  ",
+            "were spending / bored",
+            "were spent / had bored  ",
+            "have spent / could be bored",
+            "spend / are bored"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>29. A place ---- for you, Madam, as soon as you ---- the deposit</h3>",
+        answers: [
+            "has been reserved / will pay ",
+            "reserved / had paid",
+            "is reserving / are paid  ",
+            "is reserved / were paid",
+            "will be reserved / have paid"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>30. There is no way you ---- all of your project in an hour, so you ----the most important points and talk about those.</h3>",
+        answers: [
+            "should be covered / ought to choose ",
+            "used to cover / can choose   ",
+            "ought to cover / have chosen  ",
+            "is being / accepts ",
+            "can cover / had better choose"
+        ],
+        correct: [5]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+</head>
+
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Passive Voice</h3>
+        <button class="btn btn-large">Boshlash</button>
+    </div>
+</body>
+</html>

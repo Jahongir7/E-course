@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title>Modals</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jQuizler.css" />
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>1. The company had sent the advertisement to the newspaper when they realised they’d mistyped the salary they were offering for the position. Luckily, they ____ the newspaper to correct their mistake before they printed it.</h3>",
+        answers: [
+            "could have asked  ",
+            "were able to ask  ",
+            "must have asked",
+            "were supposed to ask ",
+            "might have asked"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>2. A: I wish I hadn’t criticised Mark’s drawings yesterday because he hasn’t spoken to me today. Do you think he’ll come to my party on Friday?B: Possibly, he ____ you by then</h3>",
+        answers: [
+            "has forgiven ",
+            "was able to forgive ",
+            "might have forgiven",
+            "must have forgiven ",
+            "used to forgive"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>3. Since the day his manager transferred him to the foundry section of the steel works, he ____ safety goggles</h3>",
+        answers: [
+            "will be wearing ",
+            "has had to wear ",
+            "ought to wear",
+            "must have worn  ",
+            "is wearing "
+        ],
+        correct: [1]
+    },
+{
+        type: "choose",
+        question: "<h3>4. A: This student has circled the mistakes in the text, but he hasn’t corrected them, so he’ll only get half marks.B: He ____ the instructions properly.</h3>",
+        answers: [
+            "would rather not read ",
+            "had better not read",
+            "needn’t have read ",
+            "shouldn’t have read ",
+            "must not have read "
+        ],
+        correct: [5]
+    },
+{
+        type: "choose",
+        question: "<h3>5. As a single woman, Lucy ____ quite a lot of money on clothes, jewellery and cosmetics, but now married with two children, she can’t spare so much money on them.</h3>",
+        answers: [
+            "might spend ",
+            "had spent  ",
+            "would rather spend",
+            "would spend ",
+            "should have spent "
+        ],
+        correct: [4]
+    },
+{
+        type: "choose",
+        question: "<h3>6. A: Are you going to enroll on the second course when we finish this one?B: I don’t know. It’s tiring coming every day after work. I ____ a month before I start the second course.</h3>",
+        answers: [
+            "may wait   ",
+            "am supposed to wait ",
+            "have waited",
+            "have to wait ",
+            "could have waited "
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>7. James will book the hotel rooms for the German representatives and you ____ them at the airport at eight o’clock. Is that clear?</h3>",
+        answers: [
+            "have met   ",
+            "can meet  ",
+            "are to meet  ",
+            "had met   ",
+            "would meet "
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>8. ____ lending me 25,000 liras so that I don't have to give the Dolmuş a 5 million lira note?</h3>",
+        answers: [
+            "Would you like  ",
+            "Would you rather  ",
+            "Would you mind    ",
+            "Had you better ",
+            "Do you like "
+        ],
+        correct: [3]
+    },
+{
+        type: "choose",
+        question: "<h3>9. A: Jack doesn’t work for a computer company, so why has he gone to the computer exhibition?B: I don’t know. He ____ interested in buying a computer to use at home or perhaps he’s thinking of starting his own company</h3>",
+        answers: [
+            "must be ",
+            "has to be ",
+            "will be ",
+            "ought to be ",
+            "could be "
+        ],
+        correct: [5]
+    },
+{
+        type: "choose",
+        question: "<h3>10. You ____ anything to me if you want to spend virtually your entire wages on lottery tickets, then that’s up to you.</h3>",
+        answers: [
+            "couldn’t have explained ",
+            "don’t have to explain",
+            "weren’t able to explain ",
+            "shouldn’t have explained",
+            "weren’t supposed to explain"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>11. You ____ anything after your operation. The nurses will tell you when it is all right.</h3>",
+        answers: [
+            "needn’t eat ",
+            "don’t have to eat ",
+            "couldn’t eat ",
+            "mustn’t eat",
+            "might not eat"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>12. Oh dear, my fruit cake is a little too sweet. I ____ the amount of sugar I add to the mixture next time.</h3>",
+        answers: [
+            "have been reducing ",
+            "should have reduced ",
+            "will have to reduce ",
+            "have had to reduce ",
+            "must be reducing"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>13. Isn’t it great that Tim and Sue have given up smoking? They both ____ too much.</h3>",
+        answers: [
+            "used to smoke  ",
+            "ought to be smoking ",
+            "must be smoking ",
+            "would rather smoke ",
+            "have been smoking"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>14. A: What’s happened to Mr. Meyer?B: He’s ill in hospital. They ____keep him in overnight, and if they do, he ____ travel back to Germany tomorrow morning</h3>",
+        answers: [
+            "may / won’t be able to ",
+            "would / ought not to",
+            " shall / doesn’t have to ",
+            "can / couldn’t",
+            "ought to / didn’t use to"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>15. A: ____we paint the kitchen this weekend?B: We could, but I ____ wait until the weather gets better because we’ll have to open the window.</h3>",
+        answers: [
+            "Ought / prefer  ",
+            "May / must  ",
+            "Can / would like",
+            "Shall / would sooner ",
+            "Would / had better"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>16. A: I couldn’t persuade John to come to the match with us. He said he couldn’t afford it.B: You ____ to lend him the money.A: I did, but he said he ____ borrow any money at that moment.</h3>",
+        answers: [
+            "have offered / ought not to   ",
+            " could have offered / would rather not ",
+            "may have offered / didn’t use to  ",
+            "must have offered / wouldn’t like ",
+            "can offer / had better not"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>17. ____I ask you a favour? ____ you work on Thursday night this week instead of Friday night?</h3>",
+        answers: [
+            "Can / Did  ",
+            "Would / Will  ",
+            "May / Could ",
+            "Might / Shall",
+            "Must s/ Would"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>18. Amy Johnson, the first woman pilot who ____ from England to Australia, ____ several times during her flight to fill her plane with petrol.</h3>",
+        answers: [
+            "had flown / has stopped ",
+            "could fly / was stopping",
+            "used to fly / might stop ",
+            "was flying / would rather stop",
+            "flew / had to stop"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>19. ____ you take this screwdriver back to Mr. Smith next door and thank him for lending it to us?</h3>",
+        answers: [
+            "Will  ",
+            "Must  ",
+            "Ought ",
+            "Shall  ",
+            "May"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>20. They ____ their house yet. They only put it up for sale yesterday.</h3>",
+        answers: [
+            "haven’t been selling",
+            "might not be selling",
+            "needn’t have sold ",
+            "ought not to sell ",
+            "can’t have sold"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>21. We ____ get a visa before we ____ go to Bulgaria.</h3>",
+        answers: [
+            "could / would ",
+            "are to / must  ",
+            "have to / can",
+            "may / have to ",
+            "will / shall"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>22. I only had a brief chat with Marry at the bus stop, so I ____ to ask her how she ____ on in her new job.</h3>",
+        answers: [
+            "might forget / could get ",
+            "forgot / was getting",
+            "have forgotten / used to get  ",
+            "would forget / gets ",
+            "must have forgotten / should get"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>23. A: Well, I’ve got lots of great ideas, but I haven’t written anything down yet.B: But you ____us a written outline of your section of the project today!A: Don’t panic. I’ll do it tomorrow.</h3>",
+        answers: [
+            "would rather have given ",
+            "were able to give ",
+            "must have given  ",
+            "were supposed to give ",
+            "had to give"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>24. Our father ____ a small present for me and my sister every month when he ____ his salary.</h3>",
+        answers: [
+            "was buying / had received",
+            "has had to buy / was receiving",
+            "must have bought / could receive ",
+            "would buy / received",
+            "bought / could have received"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>25. I ____ listening to pop music at all, but recently I have realised that I quite like certain pop-songs.</h3>",
+        answers: [
+            "didn’t use to enjoy  ",
+            "ought not to enjoy",
+            "must not have enjoyed ",
+            "can’t have been enjoying",
+            "wasn’t enjoying"
+        ],
+        correct: [1]
+    },
+    {
+        type: "choose",
+        question: "<h3>26. When their baby was born, Lucy ____ up work until they found someone to look after the baby.</h3>",
+        answers: [
+            "must give ",
+            "ought to give ",
+            "had to give ",
+            "used to give ",
+            "has given"
+        ],
+        correct: [3]
+    },
+    {
+        type: "choose",
+        question: "<h3>27. They had their baby daughter in June and, since then, they ____ in restaurants very often.</h3>",
+        answers: [
+            "didn’t use to eat ",
+            "couldn’t eat  ",
+            "aren’t supposed to eat ",
+            "haven’t been able to eat ",
+            "weren’t able to eat"
+        ],
+        correct: [4]
+    },
+    {
+        type: "choose",
+        question: "<h3>28. Do you think he ____ to watch the match with us? I know he enjoys football.</h3>",
+        answers: [
+            "would sooner ",
+            "had better ",
+            "would mind ",
+            "preferred",
+            "would like"
+        ],
+        correct: [5]
+    },
+    {
+        type: "choose",
+        question: "<h3>29. Would you mind if I ____ the secretary for half an hour, Mr. Pitt? She has two thousand leaflets to send out</h3>",
+        answers: [
+            "helping ",
+            "helped ",
+            "help ",
+            "have helped ",
+            "to help"
+        ],
+        correct: [2]
+    },
+    {
+        type: "choose",
+        question: "<h3>30. A: I missed this week’s episode of “The Simpsons”. What happened?B: I don’t know. I don’t watch it any more.A: Why not? I thought you were a fun of the show like me.B: Yes, I ____ it three times a week, but now I go to German lessons every night.</h3>",
+        answers: [
+            "used to watch ",
+            "had watched  ",
+            "must have watched",
+            "have watched  ",
+            "was able to watch"
+        ],
+        correct: [1]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+</head>
+
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Modals</h3>
+        <button class="btn btn-large">Boshlash</button>
+    </div>
+</body>
+</html>
