@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EnglishCourse</title> 
+<link rel="stylesheet" href="stylee.css">
+<body>
+<div id="header">
+<div class="container">
+<h1>English Course</h1>
+        
+</div>
+        
+</div>
+    
+<div id="navbar">
+<div class="container">
+<ul>
+<li> <a href="index.html" >HOME</a> </li>
+
+<li> <a href="servises.html">LESSONS</a> </li>
+ <li> <a href="#" class="active">GUIDE</a> </li>                       
+            
+</ul>
+        
+        
+        
+</div>
+</div>
+    
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/3.jpg" style="width:100%">
+    
+  </div>
+
+  <!-- Next and previous buttons -->
+  
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    
+    <div class="container"><div class="see"><h4>Bu bo'limda siz ingliz tilini o'rganishing uchun ba'zi qo'llanmalar bilan tanishasiz</h4></div></div>
+    <div class="nagapla">
+    <ul class="drop">
+        <li><a href="#">IELTS</a>
+        <ul class="drop-menu">
+            <li><a href="IR.html">READING</a> </li>
+            <li><a href="IS.html">SPEAKING</a> </li>
+            <li><a href="#">WRITING</a> </li>
+            <li><a href="#">LISTENING</a> </li>
+            </ul>
+        </li>
+        </ul>
+    <div class="container"><div class="ielts-info"><h3>IELTS-<i> International English Language Testing System.</i>
+        IELTS imtixonlari 4 bo'limdan iborat, bular. Reading, Speaking, Writing, Listening. Biz siz uchun ushbu bo'limlarga doir turli hil kitoblarni joyladik.</h3></div></div></div>
+    <div class="nagapla1"><ul class="drop">
+        <li><a href="#">CEFR</a>
+        <ul class="drop-menu">
+            <li><a href="#">READING</a> </li>
+            <li><a href="#">SPEAKING</a> </li>
+            <li><a href="#">WRITING</a> </li>
+            <li><a href="#">LISTENING</a> </li>
+            </ul>
+        </li>
+        </ul>
+    <div class="container"><div class="ielts-info"><h3>CEFR-<i> the Common European Framework of Reference.</i>
+        IELTS imtixonlari 4 bo'limdan iborat, bular. Reading, Speaking, Writing, Listening. Biz siz uchun ushbu bo'limlarga doir turli hil kitoblarni joyladik.</h3></div></div></div>
+   <script>
+       
+       var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" activee", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " activee";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+    </script> 
+</body>    
+</head>
+
+</html>
